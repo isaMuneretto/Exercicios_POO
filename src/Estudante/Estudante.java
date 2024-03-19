@@ -2,12 +2,18 @@ package Estudante;
 
 public class Estudante {
     String nome;
-    double notas[];
+    double notas[] = {8.5, 9, 8};
 
     public void adicionarNota(){
-        notas++;
-    }
-    public double calcularMedia(double notas){
 
     }
+
+    public double calcularMedia(){
+        double soma = 0;
+
+        double media;
+        media = soma / notas.length;
+        return media;
+    }
+
 }
