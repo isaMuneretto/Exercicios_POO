@@ -1,18 +1,24 @@
 package Estudante;
 
+import java.util.ArrayList;
+
 public class Estudante {
+
+    ArrayList<Double> notas = new ArrayList();
     String nome;
-    double notas[] = {8.5, 9, 8};
 
-    public void adicionarNota(){
-
+    public void adicionarNota(double nota){
+        notas.add(nota);
     }
 
     public double calcularMedia(){
-        double soma = 0;
-
-        double media;
-        media = soma / notas.length;
+        int quantidadeNotas = notas.size();
+        double media = 0;
+        double somaNotas = 0;
+        for(int i = 0; i < quantidadeNotas; i++){
+            somaNotas = somaNotas + notas.get(i);
+        }
+        media = somaNotas/quantidadeNotas;
         return media;
     }
 
