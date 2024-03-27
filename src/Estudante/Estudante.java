@@ -12,7 +12,7 @@ public class Estudante {
     }
 
     public double calcularMedia(){
-        int quantidadeNotas = notas.size();
+        int quantidadeNotas = notas.size(); //size é quantidade de notas que tem na lista
         double media = 0;
         double somaNotas = 0;
         for(int i = 0; i < quantidadeNotas; i++){
